@@ -8,7 +8,7 @@
     <script>
         function getFile(url,callback) {
             var xhr = new XMLHttpRequest();
-            xhr.open("https://cors-anywhere.herokuapp.com/" + url,true);
+            xhr.open("GET","https://cors-anywhere.herokuapp.com/" + url,true);
             xhr.onreadystatechange = function() {
                 try{
                     if (xhr.readyState == "4" || xhr.status == "200") {
